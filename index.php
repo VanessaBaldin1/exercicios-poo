@@ -10,6 +10,24 @@
     <hr>
     <p><i>Faça as chamadas e testes nesta página</i></p>
 
+<?php
+require_once "src/Livro.php";
+
+$livroA = new Livro();
+
+
+$livroA->setTitulo("O Alquimista");
+$livroA->setAutor("Paulo Coelho");
+$livroA->setPaginas(180);
+
+?>
+
+<ul>
+    <li><b>Titulo do Livro:</b> <?=$livroA->getTitulo()?></li>
+    <li><b>Autor:</b> <?=$livroA->getAutor()?></li>
+    <li><b>Total de páginas:</b> <?=$livroA->getPaginas()?></li>
+</ul>
+
     
 </body>
 </html>
