@@ -3,22 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exercício 01</title>
+    <title>Exercício 02</title>
 </head>
 <body>
-    <h1>Exercício 01</h1>
+    <h1>Exercício 02</h1>
     <hr>
     <p><i>Faça as chamadas e testes nesta página</i></p>
 
 <?php
 require_once "src/Livro.php";
 
-$livroA = new Livro();
+$livroA = new Livro("O Alquimista", "Paulo Coelho", 180);
 
-
-$livroA->setTitulo("O Alquimista");
-$livroA->setAutor("Paulo Coelho");
-$livroA->setPaginas(180);
 
 ?>
 
