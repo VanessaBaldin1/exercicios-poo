@@ -5,4 +5,5 @@ enum Genero {
   case SUSPENSE;
   case FANTASIA;
   case ROMANCE;
+  case DESIGNER;
 }
