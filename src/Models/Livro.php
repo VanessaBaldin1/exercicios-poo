@@ -1,24 +1,19 @@
 <?php
-class Livro 
+abstract class Livro 
 {
   //Atributos ou Propriedades
  private string $titulo;
  private string $autor;
- private int $paginas;
+ 
 
 //Método CONSTRUTOR (sempre é executado automaticamente ao criar objeto)
 
-public function __construct(string $titulo, string $autor, int $paginas)
+public function __construct(string $titulo, string $autor)
 {
   $this->setTitulo($titulo);
   $this->setAutor($autor);
-  $this->setPaginas($paginas);
+  
 }
-
-
-
-
-
 
  private function setTitulo(string $titulo): void
   {
@@ -30,12 +25,7 @@ public function __construct(string $titulo, string $autor, int $paginas)
    $this->autor = $autor;
 
   }
-  private function setPaginas(int $paginas): void
-  {
-   $this->paginas = $paginas;
-
-  }
-
+  
   public function getTitulo(): string
   {
     return $this->titulo;
@@ -45,12 +35,6 @@ public function __construct(string $titulo, string $autor, int $paginas)
   {
     return $this->autor;
 }
-
-public function getPaginas(): int
-  {
-    return $this->paginas;
-}
-
 
 
 }
